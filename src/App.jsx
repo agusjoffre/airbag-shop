@@ -6,6 +6,7 @@ import Shop from "./components/Shopping/Shop";
 import Cart from "./components/Cart/Cart";
 import ProductPage from "./components/Product/ProductPage";
 function App () {
+
   return (
     <>
       <Header />

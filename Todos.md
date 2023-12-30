@@ -1,7 +1,7 @@
 1. Shop:
-    - 1.1 fetchear los productos. SOLO EN MOUNT.
+    - 1.1 fetchear los productos. SOLO EN MOUNT. <DONE>
     - 1.2 Para las categorias => array de product.categories => tiene que quedar un array donde no haya
-          repeticiones de category.
+          repeticiones de category. <DONE>
     - 1.3 Hacer un map para que muestre todas las categorias.
     - 1.4 En cada ShopCard => product.image, product.title, product.price => necesario tambien sin 
           mostrar: id, category.

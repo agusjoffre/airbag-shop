@@ -1,6 +1,9 @@
 import React from "react"
 import DeliveryCard from "./DeliveryCard"
 import "../../styles/shop.css"
+import SidebarShop from "./SidebarShop"
+import MainShop from "./MainShop"
+import useFetch from "../../hooks/useFetch"
 
 const deliveryProps = [
     {
@@ -25,6 +28,16 @@ const deliveryProps = [
 
 
 function Shop () {
+
+    const { product, isLoading } = useFetch( "src/utils/products.json" )
+    const categories = product?.map( product => product.category )
+        .reduce( ( unique, item ) => {
+        if ( !unique.includes( item ) ) {
+            unique.push( item )
+        }
+        return unique
+    }, [] )
+
     return (
         <section className="shop-section">
             <div className="shop-top">
@@ -32,10 +45,20 @@ function Shop () {
                 <div className="delivery-info">
                     <DeliveryCard deliveryProps={deliveryProps[0]}/>
                     <DeliveryCard deliveryProps={deliveryProps[1]}/>
-                    <DeliveryCard deliveryProps={deliveryProps[2]}/>
+                    <DeliveryCard deliveryProps={ deliveryProps[ 2 ] } />
                 </div>
             </div>
-            <div className="shop-bottom"></div>
+            <div className="shop-bottom">
+                { !isLoading ? (
+                    <>
+                        <SidebarShop categories={categories}/>
+                        <MainShop/>
+                    </>
+                ) : (
+                    <h1 style={{color: "white"}}>Cargando la tienda...</h1>
+                )}
+                
+            </div>
         </section>
     )
 }
