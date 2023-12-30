@@ -2,4 +2,20 @@
     background: url(../assets/backgrounds/todotrampa-background.png) no-repeat;
     width: 100vw;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.home-central-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    border-radius: 0.4rem;
+    width: 800px;
+    height: 200px;
+}
+
+
