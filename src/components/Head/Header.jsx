@@ -2,6 +2,7 @@ import React from "react"
 
 import NavBar from "./NavBar"
 import HeaderCart from "./HeaderCart"
+import "../../styles/header.css"
 
 
 const logoSrc = "src/assets/icons/logo.png"
@@ -15,8 +16,8 @@ function Header () {
             </div>
             <NavBar />
             <div className="header-signup-login-section">
-                <button>Crear cuenta</button>
-                <button>Iniciar Sesion</button>
+                <button className="header-btn">Crear cuenta</button>
+                <button className="header-btn">Iniciar Sesion</button>
             </div>
             <HeaderCart/>
         </header>

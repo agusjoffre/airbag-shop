@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.header-signup-login-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+}
+.header-btn:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+ .link-nav a{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link-nav a:hover {
+    color: red;
+}
+
+.header-cart{ 
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.header-cart-left-container{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.header-cart-count {
+    font-size: 13px;
+    font-weight: 400;
+    border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: -0.8rem;
+    right: 0.3rem;
+
+}
