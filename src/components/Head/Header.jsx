@@ -1,6 +1,8 @@
 import React from "react"
+
 import NavBar from "./NavBar"
 import HeaderCart from "./HeaderCart"
+
 
 const logoSrc = "src/assets/icons/logo.png"
 
