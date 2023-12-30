@@ -4,4 +4,52 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-top {
+    padding-top: 5rem;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+}
+
+.shop-title {
+    font-family: "Karantina";
+    font-size: 9rem;
+    font-weight: 800;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    max-width: 700px;
+    gap: 1rem;
+}
+
+.card-delivery {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.card-delivery-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-delivery-right h4 {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.card-delivery-right p {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 100;
 }
