@@ -1,0 +1,73 @@
+[
+{
+    "id":1,
+    "title":"Remera Uber Puber",
+    "price":8000,
+    "talles" : [
+        "S","M","L","XL"
+    ],
+    "category":"Remeras",
+    "image":"./product-images/remera-uberpuber.svg"
+},
+{
+    "id":2,
+    "title":"Campera Uber Puber",
+    "price":20000,
+    "talles" : [
+        "M","L","XL"
+    ],
+    "category":"Abrigos",
+    "image":"./product-images/campera-uberpuber.svg"
+},
+{
+    "id":3,
+    "title":"Buzo Uber Puber",
+    "price":18000,
+    "talles" : [
+        "S","M","L","XL"
+    ],
+    "category":"Abrigos",
+    "image":"./product-images/buzo-uberpuber.svg"
+},
+{
+    "id":4,
+    "title":"Gorro de Lana Uber Puber",
+    "price":6500,
+    "category":"Accesorios",
+    "image":"./product-images/gorro-uberpuber.svg"
+},
+{
+    "id":5,
+    "title": "Remera The Sardelli's",
+    "price": 6000,
+    "talles" : [
+        "S","M","L"
+    ],
+    "category":"Remeras",
+    "image":"./product-images/remera-sardellis.svg"
+},
+{
+    "id":6,
+    "title":"Remera Mila, Saturno y el Rio",
+    "price": 5000,
+    "talles" : [
+        "L","XL"
+    ],
+    "category":"Remeras",
+    "image":"./product-images/remera-mila.svg"
+},
+{
+    "id":7,
+    "title":"Agenda Uber Puber",
+    "price": 3000,
+    "category":"Accesorios",
+    "image":"./product-images/agenda-uberpuber.svg"
+},
+{
+    "id":8,
+    "title":"Llavero/Destapador Airbag No-Oficial",
+    "price": 1100,
+    "category":"Accesorios",
+    "image":"./product-images/llavero-uberpuber.svg"
+}
+]
