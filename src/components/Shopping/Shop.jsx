@@ -27,17 +27,13 @@ const deliveryProps = [
 ];
 
 function Shop() {
+  const { products, isLoading } = useFetch('src/utils/products.json');
   const [categoryChosen, setCategoryChosen] = useState('All');
 
   const handleCategoryChosen = (category) => {
-    if (!category) {
-      setCategoryChosen('All');
-    } else {
-      setCategoryChosen(category);
-    }
+    setCategoryChosen(category || 'All');
   };
 
-  const { products, isLoading } = useFetch('src/utils/products.json');
   const categories = products?.map((product) => product.category)
     .reduce((unique, item) => {
       if (!unique.includes(item)) {
@@ -59,8 +55,11 @@ function Shop() {
       <div className="shop-bottom">
         { !isLoading ? (
           <>
-            <SidebarShop categories={categories} handleCategoryChosen={handleCategoryChosen} />
-            <MainShop categoryChosen={categoryChosen} />
+            <SidebarShop
+              categories={categories}
+              handleCategoryChosen={handleCategoryChosen}
+            />
+            <MainShop categoryChosen={categoryChosen} products={products} />
           </>
         ) : (
           <h1 style={{ color: 'white' }}>Cargando la tienda...</h1>

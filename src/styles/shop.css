@@ -6,21 +6,27 @@
     height: 80vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .shop-top {
+    
     padding-top: 5rem;
     display: flex;
     background: transparent;
     justify-content: center;
     align-items: start;
     gap: 3rem;
+    
+    background: transparent;
 }
 
 .shop-title {
     font-family: "Karantina";
     font-size: 9rem;
     font-weight: 800;
+    
+    background: transparent;
 }
 
 .delivery-info {
@@ -29,27 +35,179 @@
     align-items: centers;
     max-width: 700px;
     gap: 1rem;
+    
+    background: transparent;
 }
 
 .card-delivery {
     display: flex;
     justify-content: center;
     gap: 0.3rem;
+    
+    background: transparent;
 }
 
 .card-delivery-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    background: transparent;
 }
 
 .card-delivery-right h4 {
     font-size: 0.8rem;
     font-weight: 300;
+    
+    background: transparent;
 }
 
 .card-delivery-right p {
     text-align: center;
     font-size: 0.6rem;
     font-weight: 100;
+    
+    background: transparent;
+}
+
+.shop-bottom {
+    display: flex;
+    justify-content: center;
+    padding-left: 20rem;
+    padding-top: 5rem;
+    gap: 5rem;
+    height: 70%;
+    background: transparent;
+}
+
+
+.sidebar-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    background: transparent;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    
+    background: transparent;
+}
+
+.main-shop-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    background: transparent;
+}
+
+.main-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    
+    background: transparent;
+}
+
+
+.category-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.category-btn:hover {
+    color: red;
+}
+
+.sidebar-title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+
+.card-image {
+    width: 210px;
+    height: 230px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    width: 230px;
+    padding-bottom: 3rem;
+}
+
+.product-container {
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1rem gray;
+    padding: 1rem;
+    width: 220px;
+    height: 240px;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    margin: 0;
+    padding-top: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.card-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: transparent;
+}
+
+.icon-card-cart {
+    height: 1.2rem;
+    width: 1.2rem;
+    background: transparent;
+    padding: 0;
+}
+
+.card-btn {
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-card-add:hover {
+    transform: scale(1.1);
+}
+
+.icon-card-add {
+    background: transparent;
 }

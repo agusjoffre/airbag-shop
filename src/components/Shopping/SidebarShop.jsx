@@ -6,11 +6,19 @@ export default function SidebarShop({ categories, handleCategoryChosen }) {
       <h1 className="sidebar-title">Categorias</h1>
       <div className="categories-container">
         { categories?.map((category) => (
-          <button type="button" key={category} onClick={() => handleCategoryChosen(category)}>
+          <button className="category-btn" type="button" key={category} onClick={() => handleCategoryChosen(category)}>
             { category }
           </button>
         )) }
-        <button type="button" onClick={() => handleCategoryChosen('All')}>All</button>
+        <button
+          className="category-btn"
+          type="button"
+          onClick={() => {
+            handleCategoryChosen('All');
+          }}
+        >
+          All
+        </button>
       </div>
     </aside>
   );
