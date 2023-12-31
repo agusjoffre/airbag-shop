@@ -3,7 +3,9 @@ import React from 'react';
 const cartIconSrc = 'src/assets/icons/cart.svg';
 const addToCartIconSrc = 'src/assets/icons/add-circle.svg';
 
-export default function ProductCard({ image, title, price }) {
+export default function ProductCard({
+  image, title, price, handleAddProductsToCart, product,
+}) {
   return (
     <div className="card-container">
       <div className="product-container">
@@ -16,7 +18,12 @@ export default function ProductCard({ image, title, price }) {
         {price}
         <div className="card-bottom-right">
           <img className="icon-card-cart" src={cartIconSrc} alt="Shopping Cart" />
-          <button type="button" className="card-btn" aria-label="Add to cart">
+          <button
+            type="button"
+            className="card-btn"
+            aria-label="Add to cart"
+            onClick={() => handleAddProductsToCart(product)}
+          >
             <img className="icon-card-add" src={addToCartIconSrc} alt="Add to cart" />
           </button>
         </div>

@@ -6,7 +6,7 @@ import '../../styles/header.css';
 
 const logoSrc = 'src/assets/icons/logo.png';
 
-function Header() {
+function Header({ cartProducts, totalPrice }) {
   return (
     <header>
       <div className="logo">
@@ -17,7 +17,7 @@ function Header() {
         <button type="button" className="header-btn">Crear cuenta</button>
         <button type="button" className="header-btn">Iniciar Sesion</button>
       </div>
-      <HeaderCart />
+      <HeaderCart cartProducts={cartProducts} totalPrice={totalPrice} />
     </header>
   );
 }

@@ -6,6 +6,9 @@ header {
     margin-right: 10vw;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .header-signup-login-section {
@@ -65,8 +68,8 @@ header {
 }
 
 .header-cart-count {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 700;
     border: solid 1px red;
     display: flex;
     align-items: center;
@@ -79,5 +82,8 @@ header {
     position: relative;
     top: -0.8rem;
     right: 0.3rem;
+}
 
+.header-subtotal-count {
+    width: 5.5rem;
 }

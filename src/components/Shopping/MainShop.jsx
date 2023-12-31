@@ -1,8 +1,9 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-export default function MainShop({ products, categoryChosen }) {
-  const filteredProducts = categoryChosen === 'All' ? products : products?.filter((product) => product.category === categoryChosen);
+export default function MainShop({ products, categoryChosen, handleAddProductsToCart }) {
+  const filteredProducts = categoryChosen === 'All' ? products
+    : products?.filter((product) => product.category === categoryChosen);
 
   return (
     <div className="main-shop-container">
@@ -15,6 +16,8 @@ export default function MainShop({ products, categoryChosen }) {
       <div className="main-bottom">
         { filteredProducts?.map((product) => (
           <ProductCard
+            handleAddProductsToCart={handleAddProductsToCart}
+            product={product}
             key={product.id}
             image={product.image}
             title={product.title}

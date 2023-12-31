@@ -26,7 +26,7 @@ const deliveryProps = [
   },
 ];
 
-function Shop() {
+function Shop({ handleAddProductsToCart }) {
   const { products, isLoading } = useFetch('src/utils/products.json');
   const [categoryChosen, setCategoryChosen] = useState('All');
 
@@ -59,7 +59,11 @@ function Shop() {
               categories={categories}
               handleCategoryChosen={handleCategoryChosen}
             />
-            <MainShop categoryChosen={categoryChosen} products={products} />
+            <MainShop
+              categoryChosen={categoryChosen}
+              products={products}
+              handleAddProductsToCart={handleAddProductsToCart}
+            />
           </>
         ) : (
           <h1 style={{ color: 'white' }}>Cargando la tienda...</h1>
