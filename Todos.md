@@ -21,7 +21,12 @@
     - 2.7 Se activa con el onClick de cada CardProduct (o en el handleAdd, pero creo que va a tomar el state anterior.) AL FINAL USE USEEFFECT <done>
     - 2.8 En el subtotal del Header cambiar el numero por el estado totalPrice. <done>
 
-3. CheckOut Page...
+3. CheckOut Page:
+    - 3.1 Hacer un array con todos los productos de cartProducts pero sin repeticiones. <done>
+    - 3.2 Mostrarlos en una Card <done>
+    - 3.3 En la Card tiene que haber un input(number. con valor inicial = length de productos del mismo ID).
+    - 3.4 El input tiene que permitir sumar o restar (productos con el mismo ID) al cartProducts.
+    - 3.5 A la derecha del Card tiene que mostrarse el precio total a pagar y un fake boton de Payout.
 
 4. Product Page...
 

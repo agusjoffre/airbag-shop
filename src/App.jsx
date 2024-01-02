@@ -25,13 +25,35 @@ function App() {
     handleAddPriceToTotal();
   }, [cartProducts]);
 
+  const handleEliminateProductsToCart = (product) => {
+    setCartProducts((prevProducts) => {
+      const index = prevProducts.findIndex((prod) => prod.id === product.id);
+      if (index !== -1) {
+        const newProducts = [...prevProducts];
+        newProducts.splice(index, 1);
+        return newProducts;
+      }
+      return prevProducts;
+    });
+  };
+
   return (
     <>
       <Header cartProducts={cartProducts} totalPrice={totalPrice} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop handleAddProductsToCart={handleAddProductsToCart} />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={(
+            <Cart
+              totalPrice={totalPrice}
+              cartProducts={cartProducts}
+              handleAddProductsToCart={handleAddProductsToCart}
+              handleEliminateProductsToCart={handleEliminateProductsToCart}
+            />
+          )}
+        />
         <Route path="/product:product" element={<ProductPage />} />
       </Routes>
     </>

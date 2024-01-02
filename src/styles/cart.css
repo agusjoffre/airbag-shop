@@ -1,0 +1,32 @@
+.cart-page-container {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: url(../assets/backgrounds/todotrampa-background.png) no-repeat center center;
+    background-size: cover;
+}
+
+.cart-title {
+    text-align: center;
+    background: transparent;
+    font-size: 10rem;
+    font-family: "Karantina";
+    font-weight: 800;
+}
+
+.cart-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+}
+
+.cart-total {
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
