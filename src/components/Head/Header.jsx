@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import HeaderCart from './HeaderCart';
 import '../../styles/header.css';
 
-const logoSrc = 'src/assets/icons/logo.png';
+const logoSrc = 'public/assets/icons/logo.png';
 
 function Header({ cartProducts, totalPrice }) {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/home.css';
 
-const velezTextSrc = 'src/assets/misc/15deDiciembre.png';
-const tshirtsSrc = 'src/assets/misc/Tshirts.png';
+const velezTextSrc = 'public/assets/misc/15deDiciembre.png';
+const tshirtsSrc = 'public/assets/misc/Tshirts.png';
 
 export default function Home() {
   return (

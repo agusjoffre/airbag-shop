@@ -8,19 +8,19 @@ import useFetch from '../../hooks/useFetch';
 const deliveryProps = [
   {
     id: 1,
-    icon: 'src/assets/icons/truck.svg',
+    icon: 'public/assets/icons/truck.svg',
     title: 'Enviamos tu compra',
     description: 'Entregas a todo el pais',
   },
   {
     id: 2,
-    icon: 'src/assets/icons/credit-card.svg',
+    icon: 'public/assets/icons/credit-card.svg',
     title: 'Paga como quieras',
     description: 'Tarjetas de credito o efectivo',
   },
   {
     id: 3,
-    icon: 'src/assets/icons/lock.svg',
+    icon: 'public/assets/icons/lock.svg',
     title: 'Compra con seguridad',
     description: 'Tus datos siempre protegidos',
   },

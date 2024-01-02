@@ -1,7 +1,7 @@
 import React from 'react';
 
-const cartIconSrc = 'src/assets/icons/cart.svg';
-const addToCartIconSrc = 'src/assets/icons/add-circle.svg';
+const cartIconSrc = 'public/assets/icons/cart.svg';
+const addToCartIconSrc = 'public/assets/icons/add-circle.svg';
 
 export default function ProductCard({
   image, title, price, handleAddProductsToCart, product,

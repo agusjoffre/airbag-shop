@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: url(../assets/backgrounds/todotrampa-background.png) no-repeat center center;
+    background: url(../../public/assets/backgrounds/todotrampa-background.png) no-repeat center center;
     background-size: cover;
 }
 

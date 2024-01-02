@@ -1,5 +1,5 @@
 .home-container {
-    background: url(../assets/backgrounds/todotrampa-background.png) no-repeat;
+    background: url(../../public/assets/backgrounds/todotrampa-background.png) no-repeat;
     width: 100vw;
     height: 80vh;
     display: flex;

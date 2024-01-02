@@ -1,5 +1,5 @@
 .shop-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../assets/backgrounds/special-rectangle-background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../../public/assets/backgrounds/special-rectangle-background.png);
     background-position: 50% bottom;
     background-repeat: no-repeat;
     width: 100vw;

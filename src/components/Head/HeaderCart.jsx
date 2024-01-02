@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const cartSrc = 'src/assets/icons/cart.svg';
+const cartSrc = 'public/assets/icons/cart.svg';
 
 function HeaderCart({ cartProducts, totalPrice }) {
   const cartCount = cartProducts.length;
