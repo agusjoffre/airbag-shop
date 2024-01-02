@@ -32,6 +32,7 @@ export default function Cart({
         {' '}
         {price}
       </h2>
+      <button type="button" className="btn-pay" onClick={() => alert(`Pagar $${price}`)}>Payout</button>
     </div>
   );
 }
